@@ -9,6 +9,7 @@ import { Skills } from '@sections/Skills';
 import { Projects } from '@sections/Projects';
 import { Experience } from '@sections/Experience';
 import { Contact } from '@sections/Contact';
+import { ChatWidget } from '@components/ChatWidget';
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
           </main>
 
           <Footer />
+          <ChatWidget />
         </>
       )}
     </HelmetProvider>

@@ -150,6 +150,18 @@
     "locating": "// locating developer…",
     "found": "Lagos, Nigeria — 6.52°N, 3.38°E"
   },
+  "chat": {
+    "header": "Let's talk",
+    "body": "Pick a channel and I'll get back to you as soon as possible.",
+    "whatsapp": "WhatsApp",
+    "whatsappSub": "Chat directly — usually fast",
+    "email": "Send a message",
+    "emailSub": "Via the contact form",
+    "or": "or",
+    "mailtoLabel": "email me directly",
+    "open": "Open chat",
+    "close": "Close chat"
+  },
   "footer": {
     "built": "Built with React, TypeScript & GSAP",
     "rights": "All rights reserved."
