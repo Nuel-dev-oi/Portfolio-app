@@ -1,10 +1,23 @@
 import { useRef, useEffect, useState } from 'react';
 import { gsap, prefersReducedMotion } from '@lib/gsap';
 import { useT } from '@lib/i18n';
-import { useTheme } from '@hooks/useTheme';
 import { NodeGraph } from '@components/NodeGraph';
 import { AnimatedText } from '@components/AnimatedText';
 import profilePhoto from '@assets/emmanuel2.jpeg';
+
+function useIsLight() {
+  const [isLight, setIsLight] = useState(
+    () => document.documentElement.getAttribute('data-theme') === 'light',
+  );
+  useEffect(() => {
+    const obs = new MutationObserver(() => {
+      setIsLight(document.documentElement.getAttribute('data-theme') === 'light');
+    });
+    obs.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    return () => obs.disconnect();
+  }, []);
+  return isLight;
+}
 
 function ScrollCue({ label }: { label: string }) {
   return (
@@ -26,8 +39,7 @@ export function Hero() {
 
   const [nameComplete, setNameComplete] = useState(false);
   const { t } = useT();
-  const { theme } = useTheme();
-  const isLight = theme === 'light';
+  const isLight = useIsLight();
 
   // After name finishes — reveal everything else + photo
   useEffect(() => {
