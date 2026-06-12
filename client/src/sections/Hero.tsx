@@ -155,27 +155,7 @@ export function Hero() {
                 className="block w-full whitespace-nowrap"
                 style={{ fontSize: 'clamp(1.5rem, 5vw, 3.4rem)', color: isLight ? '#0f172a' : '#e8edf5' }}
               >
-                <AnimatedText text="ONYEDIKACHI" delay={0.55} stagger={0.036} wave />
-              </span>
-              <span
-                className="block w-full"
-                style={{ fontSize: 'clamp(1.5rem, 5vw, 3.4rem)' }}
-              >
-                <AnimatedText
-                  text="EMMANUEL"
-                  delay={0.85}
-                  stagger={0.045}
-                  wave
-                  onComplete={() => setNameComplete(true)}
-                  gradientStyle={{
-                    background: isLight
-                      ? 'linear-gradient(90deg, #1e40af 0%, #2563eb 55%, #0d9488 100%)'
-                      : 'linear-gradient(90deg, #e8edf5 0%, #3b82f6 55%, #60efbc 100%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    backgroundClip: 'text',
-                  }}
-                />
+                <AnimatedText text="ONYEDIKACHI" delay={0.55} stagger={0.036} wave onComplete={() => setNameComplete(true)} />
               </span>
             </h1>
 
