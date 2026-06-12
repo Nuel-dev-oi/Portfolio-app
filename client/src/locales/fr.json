@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "experience": "Expérience",
+    "contact": "Contact",
+    "downloadCV": "Télécharger CV",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "switchLight": "Passer en mode clair",
+    "switchDark": "Passer en mode sombre"
+  },
+  "hero": {
+    "eyebrow": "Ingénieur Full-Stack & Frontend",
+    "tagline": "Je conçois des <strong>produits web précis et évolutifs</strong> — des interfaces pixel-perfect aux APIs de production. Actuellement chez <signal>Terapage</signal>.",
+    "cta_work": "Voir mes projets ↓",
+    "cta_cv": "Télécharger CV",
+    "scroll": "Défiler"
+  },
+  "about": {
+    "label": "01 / À propos",
+    "heading": "Ingénieur orienté détail. <signal>Diplômé en chimie</signal> qui code.",
+    "p1": "Je suis développeur Full-Stack & Frontend basé à <chalk>Lagos, Nigéria</chalk>, contribuant actuellement à <signal>Terapage</signal> — une plateforme de gestion d'activités de recherche — où je dirige l'architecture full-stack pour six types d'activités distincts, en pilotant à la fois le développement frontend et backend.",
+    "p2": "Ma formation en <chalk>B.Sc. Chimie de l'Université de Lagos</chalk> m'apporte une approche scientifique du débogage — systématique, patiente et rigoureuse. J'applique cette même précision au mode strict TypeScript et au travail UI pixel-perfect.",
+    "p3": "Expert dans la <chalk>stack MERN et Next.js App Router</chalk>, avec un fort accent sur l'authentification robuste, les frontends optimisés et les APIs RESTful propres. Je développe également l'application mobile React Native Terapage.",
+    "stats": {
+      "years": "Ans de développement",
+      "projects": "Projets livrés",
+      "activities": "Types d'activités Terapage",
+      "eslint": "Violations ESLint corrigées"
+    }
+  },
+  "skills": {
+    "eyebrow": "// 04 — compétences",
+    "heading": "Compétences",
+    "headingAccent": "Techniques",
+    "body": "Six ans de pratique délibérée sur la stack complète — des interfaces pixel-perfect aux APIs de production et applications mobiles.",
+    "stats": {
+      "technologies": "Technologies",
+      "domains": "Domaines",
+      "yearsCoding": "Ans de code",
+      "yearsProd": "Ans en production"
+    },
+    "categories": {
+      "frontend": "Frontend",
+      "mobile": "Mobile",
+      "stateUi": "État & UI",
+      "backend": "Backend",
+      "database": "Base de données",
+      "tooling": "Outils & Tests"
+    }
+  },
+  "projects": {
+    "eyebrow": "// 05 — travaux sélectionnés",
+    "heading": "Projets &",
+    "headingAccent": "Réalisations",
+    "body": "Une sélection de travaux en production et de projets personnels — systèmes d'authentification, applications full-stack, interfaces e-commerce et une plateforme mobile en cours.",
+    "inProgress": "En cours",
+    "moreOn": "Plus sur",
+    "githubHandle": "github.com/Nuel-dev-oi",
+    "ariaGithub": "GitHub —",
+    "ariaLive": "Démo live —",
+    "items": {
+      "auth": {
+        "title": "Système d'authentification Next.js Full-Stack",
+        "description": "Boilerplate d'auth sécurisé avec inscription, connexion et gestion de profil. JWT via cookies HTTP-only, hachage Bcrypt et middleware de protection des routes."
+      },
+      "quiz": {
+        "title": "Country Quiz Master",
+        "description": "Quiz de géographie ultra-rapide avec 100 questions dynamiques sur les drapeaux et capitales. Moteur de score intelligent avec TypeScript Record pour éviter les doubles comptages."
+      },
+      "tracker": {
+        "title": "Suivi d'exercices MERN",
+        "description": "Application CRUD full-stack pour la gestion de journaux d'exercices. API RESTful avec Node.js/Express et modélisation de données via Mongoose et MongoDB Atlas."
+      },
+      "jumia": {
+        "title": "Interface E-commerce Jumia & Dashboard Météo",
+        "description": "Clone frontend Jumia entièrement responsive avec principes d'Atomic Design. Moteur de thème sombre/clair persistant via Redux et localStorage. Logique validée avec Jest/Vitest."
+      },
+      "terapage": {
+        "title": "Terapage Mobile (En cours)",
+        "description": "Application React Native Participant pour la plateforme de recherche Terapage. Basée sur Expo SDK 51+, Expo Router v3, Zustand, TanStack Query et NativeWind."
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "// 06 — parcours",
+    "heading": "Expérience &",
+    "headingAccent": "Formation",
+    "present": "Présent",
+    "eduLabel": "Formation",
+    "eduDegree": "Licence en Chimie",
+    "eduSchool": "Université de Lagos",
+    "eduPeriod": "2018 – 2022",
+    "eduNote": "La rigueur scientifique appliquée au logiciel — débogage systématique, analyse précise, résolution de problèmes sans hypothèses.",
+    "items": {
+      "terapage": {
+        "role": "Développeur Frontend / Full-Stack",
+        "company": "Terapage",
+        "period": "2026 – Présent",
+        "description": "Plateforme de gestion d'activités de recherche au service des Chercheurs, Collaborateurs, Observateurs et Participants.",
+        "bullets": {
+          "0": "Responsable du développement frontend de bout en bout pour six types d'activités distincts — Revue de documents, Sondage, Upload Audio/Vidéo/Image et Multi-tâches.",
+          "1": "Conçu un système d'annotation pixel-accurate pour la revue de documents, résolvant des bugs complexes liés aux offsets de défilement dynamiques et à la mise à l'échelle du viewport PDF.",
+          "2": "Implémenté un support multilingue persistant (i18next) sur tous les composants d'activité, incluant l'hydratation de l'état de langue au rechargement.",
+          "3": "Réalisé un renommage terminologique global couvrant les composants frontend, routes backend, schémas Mongoose, templates de notifications et emails transactionnels — zéro régression.",
+          "4": "Développé le module Multi-tâches côté Participant avec recherche, pagination, visibilité des brouillons et indicateurs de progression.",
+          "5": "Résolu une suite de bugs dans les lecteurs médias Audio, Vidéo et Image — synchronisation des sous-titres, affichage de l'indicateur IA et fonctionnalité de téléchargement.",
+          "6": "Initié l'application mobile React Native Terapage avec Expo, TypeScript, Expo Router v3, Zustand, TanStack Query et NativeWind."
+        }
+      },
+      "personal": {
+        "role": "Développeur Full-Stack & Frontend",
+        "company": "Projets Personnels & Pratiques",
+        "period": "2022 – 2026",
+        "description": "Projets full-stack indépendants : systèmes d'authentification, quiz, interfaces e-commerce et trackers d'exercices.",
+        "bullets": {
+          "0": "Conçu des applications full-stack sécurisées avec Next.js App Router, JWT et les patterns singleton Mongoose.",
+          "1": "Développé des frontends React performants en mode strict TypeScript, avec interfaces personnalisées et tests au niveau composant.",
+          "2": "Créé des APIs RESTful avec Node.js/Express et modélisation de données via Mongoose et MongoDB Atlas."
+        }
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "// 07 — contact",
+    "heading": "Travaillons",
+    "headingAccent": "Ensemble",
+    "body": "Un projet en tête, un poste à discuter, ou juste envie de dire bonjour ? Ma boîte mail est ouverte.",
+    "nameLabel": "Nom",
+    "namePlaceholder": "Votre nom",
+    "emailLabel": "Email",
+    "emailPlaceholder": "votre@email.com",
+    "subjectLabel": "Sujet",
+    "subjectPlaceholder": "De quoi s'agit-il ?",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Dites-m'en plus…",
+    "send": "Envoyer",
+    "sending": "Envoi en cours…",
+    "successTitle": "Message envoyé !",
+    "successBody": "Merci de m'avoir contacté. Je vous répondrai dans les 24 heures.",
+    "errorTitle": "Une erreur s'est produite.",
+    "errorBody": "Veuillez réessayer ou m'écrire directement.",
+    "emailDirect": "Ou contactez-moi directement à",
+    "location": "Lagos, Nigéria",
+    "availability": "Disponible pour des postes à temps plein et freelance"
+  },
+  "globe": {
+    "locating": "// localisation du développeur…",
+    "found": "Lagos, Nigéria — 6,52°N, 3,38°E"
+  },
+  "footer": {
+    "built": "Conçu avec React, TypeScript & GSAP",
+    "rights": "Tous droits réservés."
+  }
+}

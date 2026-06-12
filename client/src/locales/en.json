@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "downloadCV": "Download CV",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "switchLight": "Switch to light mode",
+    "switchDark": "Switch to dark mode"
+  },
+  "hero": {
+    "eyebrow": "Full-Stack & Frontend Engineer",
+    "tagline": "I build <strong>precise, scalable web products</strong> — from pixel-accurate UIs to production APIs. Currently shipping at <signal>Terapage</signal>.",
+    "cta_work": "View My Work ↓",
+    "cta_cv": "Download CV",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "label": "01 / About",
+    "heading": "Detail-oriented engineer. <signal>Chemistry graduate</signal> who codes.",
+    "p1": "I'm a Full-Stack & Frontend Developer based in <chalk>Lagos, Nigeria</chalk>, currently contributing to <signal>Terapage</signal> — a live research activity management platform — where I own full-stack architecture across six distinct activity types, collaborating directly with designers and leading both frontend and backend development.",
+    "p2": "My background in <chalk>B.Sc. Chemistry from the University of Lagos</chalk> gives me a scientist's approach to debugging — systematic, patient, and rigorous. I bring that same precision to TypeScript strict mode, pixel-accurate UI work, and ESLint compliance.",
+    "p3": "Expert in the <chalk>MERN stack and Next.js App Router</chalk>, with a strong focus on robust authentication, performance-optimised frontends, and clean RESTful APIs. Currently also building the Terapage React Native mobile app.",
+    "stats": {
+      "years": "Years Building",
+      "projects": "Projects Shipped",
+      "activities": "Activity Types at Terapage",
+      "eslint": "ESLint Violations Fixed"
+    }
+  },
+  "skills": {
+    "eyebrow": "// 04 — capabilities",
+    "heading": "Technical",
+    "headingAccent": "Skills",
+    "body": "Six years of deliberate practice across the full stack — from pixel-accurate UIs to production-grade APIs and mobile apps.",
+    "stats": {
+      "technologies": "Technologies",
+      "domains": "Domains",
+      "yearsCoding": "Years coding",
+      "yearsProd": "Years production"
+    },
+    "categories": {
+      "frontend": "Frontend",
+      "mobile": "Mobile",
+      "stateUi": "State & UI",
+      "backend": "Backend",
+      "database": "Database",
+      "tooling": "Tooling & Testing"
+    }
+  },
+  "projects": {
+    "eyebrow": "// 05 — selected work",
+    "heading": "Projects &",
+    "headingAccent": "Builds",
+    "body": "A cross-section of production work and practice projects — authentication systems, full-stack apps, e-commerce interfaces, and an in-progress mobile platform.",
+    "inProgress": "In Progress",
+    "moreOn": "More on",
+    "githubHandle": "github.com/Nuel-dev-oi",
+    "ariaGithub": "GitHub —",
+    "ariaLive": "Live demo —",
+    "items": {
+      "auth": {
+        "title": "Full-Stack Next.js Authentication System",
+        "description": "Secure auth boilerplate with registration, login, and profile management. JWT via HTTP-only cookies, Bcrypt hashing, and a Middleware gatekeeper for route protection."
+      },
+      "quiz": {
+        "title": "Country Quiz Master",
+        "description": "Ultra-fast geography quiz with 100 dynamic questions on global flags and capitals. Smart scoring engine uses TypeScript Record state mapping to prevent double-scoring."
+      },
+      "tracker": {
+        "title": "MERN Exercise Tracker",
+        "description": "Full-stack CRUD app for exercise log management. RESTful API with Node.js/Express and schema-based data modelling via Mongoose and MongoDB Atlas."
+      },
+      "jumia": {
+        "title": "Jumia E-commerce Interface & Weather Dashboard",
+        "description": "Fully responsive Jumia frontend clone using Atomic Design principles. Persistent Dark/Light theme engine via Redux and localStorage. Calculation logic validated with Jest/Vitest."
+      },
+      "terapage": {
+        "title": "Terapage Mobile (In Progress)",
+        "description": "React Native Participant app for the Terapage research platform. Built on Expo SDK 51+, Expo Router v3, Zustand, TanStack Query, and NativeWind."
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "// 06 — journey",
+    "heading": "Experience &",
+    "headingAccent": "Education",
+    "present": "Present",
+    "eduLabel": "Education",
+    "eduDegree": "B.Sc. Chemistry",
+    "eduSchool": "University of Lagos",
+    "eduPeriod": "2018 – 2022",
+    "eduNote": "Scientific rigour applied to software — systematic debugging, precise analysis, zero-assumption problem solving.",
+    "items": {
+      "terapage": {
+        "role": "Frontend / Full-Stack Developer",
+        "company": "Terapage",
+        "period": "2026 – Present",
+        "description": "Research activity management platform serving Researchers, Collaborators, Observers, and Participants.",
+        "bullets": {
+          "0": "Owned end-to-end frontend development for six distinct activity types — Document Review, Poll & Survey, Upload Audio/Video/Image, and Multi-Task.",
+          "1": "Engineered a pixel-accurate annotation system for Document Review, resolving complex positioning bugs caused by dynamic scroll offsets and PDF viewport scaling.",
+          "2": "Implemented persistent multilingual support (i18next) across all activity components, including language state hydration on page reload.",
+          "3": "Built a global terminology rename spanning frontend components, backend routes, Mongoose schemas, notification templates, and transactional emails — zero regressions.",
+          "4": "Developed the Participant-side Multi-Task module with search, pagination, draft visibility, and progress indicators.",
+          "5": "Resolved a suite of media player bugs across Upload Audio, Video, and Image activities including subtitle sync, AI indicator display, and download functionality.",
+          "6": "Initiated the Terapage React Native mobile app using Expo, TypeScript, Expo Router v3, Zustand, TanStack Query, and NativeWind."
+        }
+      },
+      "personal": {
+        "role": "Full-Stack & Frontend Developer",
+        "company": "Personal & Practice Projects",
+        "period": "2022 – 2026",
+        "description": "Independent full-stack projects spanning authentication systems, quiz apps, e-commerce UIs, and exercise trackers.",
+        "bullets": {
+          "0": "Architected secure full-stack applications with Next.js App Router, JWT, and Mongoose singleton patterns.",
+          "1": "Built performant React frontends with TypeScript strict mode, custom interfaces, and component-level testing.",
+          "2": "Engineered RESTful APIs with Node.js/Express and schema-based data modelling via Mongoose and MongoDB Atlas."
+        }
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "// 07 — get in touch",
+    "heading": "Let's",
+    "headingAccent": "Connect",
+    "body": "Have a project in mind, a role to discuss, or just want to say hello? My inbox is open.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your@email.com",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "What's this about?",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell me more…",
+    "send": "Send Message",
+    "sending": "Sending…",
+    "successTitle": "Message sent!",
+    "successBody": "Thanks for reaching out. I'll get back to you within 24 hours.",
+    "errorTitle": "Something went wrong.",
+    "errorBody": "Please try again or email me directly.",
+    "emailDirect": "Or reach me directly at",
+    "location": "Lagos, Nigeria",
+    "availability": "Open to full-time & freelance roles"
+  },
+  "globe": {
+    "locating": "// locating developer…",
+    "found": "Lagos, Nigeria — 6.52°N, 3.38°E"
+  },
+  "footer": {
+    "built": "Built with React, TypeScript & GSAP",
+    "rights": "All rights reserved."
+  }
+}

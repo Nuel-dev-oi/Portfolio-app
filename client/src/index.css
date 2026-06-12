@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Color tokens ── */
+  --color-void: #080c14;
+  --color-ink: #111827;
+  --color-steel: #1e2d45;
+  --color-signal: #3b82f6;
+  --color-phosphor: #60efbc;
+  --color-chalk: #e8edf5;
+  --color-muted: #8a99b0;
+
+  /* ── Typography ── */
+  --font-display: "Syne", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/*
+  Light mode — override the 7 colour tokens.
+  Everything in the app uses these tokens, so no component JSX needs touching.
+
+  Palette logic:
+    void  → near-white parchment   (page background)
+    ink   → light warm grey        (card/section backgrounds)
+    steel → cool mid-grey          (borders)
+    signal → same blue (brand, unchanged)
+    phosphor → teal deepened slightly for legibility on white
+    chalk → near-black             (primary text — inverted from dark mode)
+    muted → warm medium grey       (secondary text)
+*/
+[data-theme="light"] {
+  --color-void:     #f4f5f7;
+  --color-ink:      #ffffff;
+  --color-steel:    #cbd5e1;
+  --color-signal:   #2563eb;
+  --color-phosphor: #0d9488;
+  --color-chalk:    #0f172a;
+  --color-muted:    #64748b;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply bg-void text-chalk font-body;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Respect reduced-motion — GSAP checks this at runtime too */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
