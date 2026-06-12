@@ -57,6 +57,7 @@ export const experience: ExperienceEntry[] = [
   {
     roleKey: 'experience.items.personal.role',
     company: 'experience.items.personal.company',
+    companyUrl: 'https://github.com/Nuel-dev-oi',
     periodKey: 'experience.items.personal.period',
     descriptionKey: 'experience.items.personal.description',
     bulletKeys: [
