@@ -146,9 +146,7 @@ export function Hero() {
               className="mt-6 text-muted text-base md:text-lg max-w-lg leading-relaxed"
               style={{ opacity: 0 }}
             >
-              {t('hero.tagline', {
-                defaultValue: t('hero.tagline'),
-              }).split(/<strong>|<\/strong>|<signal>|<\/signal>/).map((part, i) => {
+              {t('hero.tagline').split(/<strong>|<\/strong>|<signal>|<\/signal>/).map((part, i) => {
                 if (i === 1) return <span key={i} className="text-chalk font-medium">{part}</span>;
                 if (i === 3) return <span key={i} className="text-signal font-medium">{part}</span>;
                 return part;

@@ -10,17 +10,6 @@ import { Projects } from '@sections/Projects';
 import { Experience } from '@sections/Experience';
 import { Contact } from '@sections/Contact';
 
-// Placeholder sections — replaced one by one per phase
-function PlaceholderSection({ id, label }: { id: string; label: string }) {
-  return (
-    <section
-      id={id}
-      className="min-h-screen flex items-center justify-center border-b border-steel/30"
-    >
-      <p className="font-mono text-muted text-sm">[ {label} — coming soon ]</p>
-    </section>
-  );
-}
 
 function App() {
   // introDone: globe found Lagos, fade-out started — mount the app beneath it
