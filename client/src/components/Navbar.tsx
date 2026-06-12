@@ -126,7 +126,7 @@ export function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-void/90 backdrop-blur-md border-b border-steel/50 shadow-lg shadow-void/50'
-          : 'bg-transparent'
+          : 'bg-void/30 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none'
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -200,7 +200,7 @@ export function Navbar() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden text-chalk hover:text-phosphor transition-colors duration-200 p-1"
+          className="md:hidden text-chalk hover:text-signal transition-colors duration-200 p-2 rounded bg-steel/30 backdrop-blur-sm"
           onClick={() => setMenuOpen((prev) => !prev)}
           aria-label={menuOpen ? t('nav.closeMenu') : t('nav.openMenu')}
           aria-expanded={menuOpen}
