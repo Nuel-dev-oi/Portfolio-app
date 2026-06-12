@@ -74,6 +74,7 @@ export function Hero() {
     <section
       id="hero"
       className="relative min-h-screen flex items-center overflow-hidden bg-void w-full"
+      style={{ backgroundColor: '#04070f' }}
     >
       <NodeGraph />
 
@@ -82,7 +83,16 @@ export function Hero() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse 80% 70% at 35% 50%, transparent 0%, rgba(8,12,20,0.6) 60%, rgba(8,12,20,0.96) 100%)',
+            'radial-gradient(ellipse 80% 70% at 35% 50%, rgba(8,12,20,0.35) 0%, rgba(8,12,20,0.75) 55%, rgba(8,12,20,0.97) 100%)',
+        }}
+        aria-hidden="true"
+      />
+      {/* Extra vignette for mobile — darkens edges so text is always legible */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            'linear-gradient(to bottom, rgba(8,12,20,0.55) 0%, transparent 20%, transparent 75%, rgba(8,12,20,0.7) 100%)',
         }}
         aria-hidden="true"
       />
