@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from 'react';
 import { gsap, prefersReducedMotion } from '@lib/gsap';
 import { useT } from '@lib/i18n';
+import { useTheme } from '@hooks/useTheme';
 import { NodeGraph } from '@components/NodeGraph';
 import { AnimatedText } from '@components/AnimatedText';
 import profilePhoto from '@assets/emmanuel2.jpeg';
@@ -25,6 +26,8 @@ export function Hero() {
 
   const [nameComplete, setNameComplete] = useState(false);
   const { t } = useT();
+  const { theme } = useTheme();
+  const isLight = theme === 'light';
 
   // After name finishes — reveal everything else + photo
   useEffect(() => {
@@ -73,28 +76,41 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center overflow-hidden bg-void w-full"
+      className="relative min-h-screen flex items-center overflow-hidden w-full"
+      style={{ backgroundColor: isLight ? '#ffffff' : '#080c14' }}
     >
       <NodeGraph />
 
-      {/* Gradient overlay — heavier on the right so photo doesn't fight the canvas */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            'radial-gradient(ellipse 80% 70% at 35% 50%, rgba(8,12,20,0.35) 0%, rgba(8,12,20,0.75) 55%, rgba(8,12,20,0.97) 100%)',
-        }}
-        aria-hidden="true"
-      />
-      {/* Extra vignette for mobile — darkens edges so text is always legible */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            'linear-gradient(to bottom, rgba(8,12,20,0.55) 0%, transparent 20%, transparent 75%, rgba(8,12,20,0.7) 100%)',
-        }}
-        aria-hidden="true"
-      />
+      {/* Dark mode: radial + vignette overlays for depth */}
+      {!isLight && (
+        <>
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                'radial-gradient(ellipse 80% 70% at 35% 50%, rgba(8,12,20,0.35) 0%, rgba(8,12,20,0.75) 55%, rgba(8,12,20,0.97) 100%)',
+            }}
+            aria-hidden="true"
+          />
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                'linear-gradient(to bottom, rgba(8,12,20,0.55) 0%, transparent 20%, transparent 75%, rgba(8,12,20,0.7) 100%)',
+            }}
+            aria-hidden="true"
+          />
+        </>
+      )}
+
+      {/* Light mode: subtle white wash so canvas doesn't overpower text */}
+      {isLight && (
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{ background: 'rgba(255,255,255,0.72)' }}
+          aria-hidden="true"
+        />
+      )}
 
       {/* Two-column layout: text left, photo right */}
       <div className="relative z-10 w-full max-w-6xl mx-auto px-6 pt-24 pb-16">
@@ -118,14 +134,14 @@ export function Hero() {
                 3.4rem cap leaves margin; wraps between words below that. */}
             <h1 className="font-display font-extrabold leading-[1.05] tracking-tight w-full">
               <span
-                className="block text-chalk w-full"
-                style={{ fontSize: 'clamp(1.5rem, 5vw, 3.4rem)' }}
+                className="block w-full"
+                style={{ fontSize: 'clamp(1.5rem, 5vw, 3.4rem)', color: isLight ? '#0f172a' : '#e8edf5' }}
               >
                 <AnimatedText text="OKORO" delay={0.3} stagger={0.036} wave />
               </span>
               <span
-                className="block text-chalk w-full whitespace-nowrap"
-                style={{ fontSize: 'clamp(1.5rem, 5vw, 3.4rem)' }}
+                className="block w-full whitespace-nowrap"
+                style={{ fontSize: 'clamp(1.5rem, 5vw, 3.4rem)', color: isLight ? '#0f172a' : '#e8edf5' }}
               >
                 <AnimatedText text="ONYEDIKACHI" delay={0.55} stagger={0.036} wave />
               </span>
@@ -133,7 +149,9 @@ export function Hero() {
                 className="block w-full"
                 style={{
                   fontSize: 'clamp(1.5rem, 5vw, 3.4rem)',
-                  background: 'linear-gradient(90deg, #e8edf5 0%, #3b82f6 55%, #60efbc 100%)',
+                  background: isLight
+                    ? 'linear-gradient(90deg, #1e40af 0%, #2563eb 55%, #0d9488 100%)'
+                    : 'linear-gradient(90deg, #e8edf5 0%, #3b82f6 55%, #60efbc 100%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text',

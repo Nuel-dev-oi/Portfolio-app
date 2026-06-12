@@ -53,11 +53,6 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
-  /* Light mode: hero section gets a stronger dark vignette so text stays legible */
-  [data-theme="light"] #hero {
-    background-color: #1a2236;
-  }
-
   /* Respect reduced-motion — GSAP checks this at runtime too */
   @media (prefers-reduced-motion: reduce) {
     *,
