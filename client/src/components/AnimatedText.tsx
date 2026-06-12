@@ -8,6 +8,7 @@ interface AnimatedTextProps {
   stagger?: number;
   wave?: boolean;
   onComplete?: () => void;
+  gradientStyle?: React.CSSProperties;
 }
 
 export function AnimatedText({
@@ -17,6 +18,7 @@ export function AnimatedText({
   stagger = 0.035,
   wave = false,
   onComplete,
+  gradientStyle,
 }: AnimatedTextProps) {
   const containerRef = useRef<HTMLSpanElement>(null);
 
@@ -88,7 +90,7 @@ export function AnimatedText({
               data-char
               className="inline-block"
               aria-hidden="true"
-              style={{ opacity: 0 }}
+              style={{ opacity: 0, ...gradientStyle }}
             >
               {char}
             </span>

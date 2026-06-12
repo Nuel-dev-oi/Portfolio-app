@@ -159,15 +159,7 @@ export function Hero() {
               </span>
               <span
                 className="block w-full"
-                style={{
-                  fontSize: 'clamp(1.5rem, 5vw, 3.4rem)',
-                  background: isLight
-                    ? 'linear-gradient(90deg, #1e40af 0%, #2563eb 55%, #0d9488 100%)'
-                    : 'linear-gradient(90deg, #e8edf5 0%, #3b82f6 55%, #60efbc 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                }}
+                style={{ fontSize: 'clamp(1.5rem, 5vw, 3.4rem)' }}
               >
                 <AnimatedText
                   text="EMMANUEL"
@@ -175,6 +167,14 @@ export function Hero() {
                   stagger={0.045}
                   wave
                   onComplete={() => setNameComplete(true)}
+                  gradientStyle={{
+                    background: isLight
+                      ? 'linear-gradient(90deg, #1e40af 0%, #2563eb 55%, #0d9488 100%)'
+                      : 'linear-gradient(90deg, #e8edf5 0%, #3b82f6 55%, #60efbc 100%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                  }}
                 />
               </span>
             </h1>
