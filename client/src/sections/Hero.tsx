@@ -74,7 +74,6 @@ export function Hero() {
     <section
       id="hero"
       className="relative min-h-screen flex items-center overflow-hidden bg-void w-full"
-      style={{ backgroundColor: '#04070f' }}
     >
       <NodeGraph />
 
