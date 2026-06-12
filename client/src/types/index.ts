@@ -23,6 +23,7 @@ export interface Project {
 export interface ExperienceEntry {
   roleKey: string;
   company: string;
+  companyUrl?: string;
   periodKey: string;
   descriptionKey: string;
   bulletKeys: string[];

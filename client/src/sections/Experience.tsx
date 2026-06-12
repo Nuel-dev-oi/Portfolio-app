@@ -25,6 +25,7 @@ function TimelineDot({ active }: { active?: boolean }) {
 interface ExpCardProps {
   roleKey: string;
   company: string;
+  companyUrl?: string;
   periodKey: string;
   descriptionKey: string;
   bulletKeys: string[];
@@ -34,7 +35,7 @@ interface ExpCardProps {
   t: (key: string) => string;
 }
 
-function ExpCard({ roleKey, company, periodKey, descriptionKey, bulletKeys, stack, index, isActive, t }: ExpCardProps) {
+function ExpCard({ roleKey, company, companyUrl, periodKey, descriptionKey, bulletKeys, stack, index, isActive, t }: ExpCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -93,9 +94,20 @@ function ExpCard({ roleKey, company, periodKey, descriptionKey, bulletKeys, stac
       <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
         <div>
           <h3 className="font-display font-bold text-chalk text-lg leading-snug">{t(roleKey)}</h3>
-          <p className={`font-mono text-sm mt-0.5 ${isActive ? 'text-phosphor' : 'text-signal'}`}>
-            {t(company)}
-          </p>
+          {companyUrl ? (
+            <a
+              href={companyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`font-mono text-sm mt-0.5 hover:underline underline-offset-2 ${isActive ? 'text-phosphor' : 'text-signal'}`}
+            >
+              {t(company)}
+            </a>
+          ) : (
+            <p className={`font-mono text-sm mt-0.5 ${isActive ? 'text-phosphor' : 'text-signal'}`}>
+              {t(company)}
+            </p>
+          )}
         </div>
         <span className="font-mono text-xs text-muted border border-steel/50 rounded px-2.5 py-1 shrink-0 self-start">
           {t(periodKey)}

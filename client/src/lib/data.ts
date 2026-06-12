@@ -40,6 +40,7 @@ export const experience: ExperienceEntry[] = [
   {
     roleKey: 'experience.items.terapage.role',
     company: 'experience.items.terapage.company',
+    companyUrl: 'https://terapage.ai/',
     periodKey: 'experience.items.terapage.period',
     descriptionKey: 'experience.items.terapage.description',
     bulletKeys: [
