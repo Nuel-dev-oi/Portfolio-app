@@ -186,7 +186,7 @@ export function Hero() {
                 {t('hero.cta_work')}
               </a>
               <a
-                href="/Okoro_Emmanuel_CV_Enhanced.pdf"
+                href="/Okoro_Emmanuel_CV_Updated.pdf"
                 download
                 className="px-7 py-3 border border-steel text-chalk font-mono text-sm rounded hover:border-signal hover:text-signal transition-all duration-200 w-full sm:w-auto text-center"
                 style={{ opacity: 0 }}

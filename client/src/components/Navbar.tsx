@@ -170,7 +170,7 @@ export function Navbar() {
           <LangSwitcher />
           <a
             ref={ctaRef}
-            href="/Okoro_Emmanuel_CV_Enhanced.pdf"
+            href="/Okoro_Emmanuel_CV_Updated.pdf"
             download
             className="inline-flex items-center gap-2 px-4 py-2 border border-signal text-signal font-mono text-sm rounded hover:bg-signal hover:text-void transition-all duration-200"
           >
@@ -237,7 +237,7 @@ export function Navbar() {
           </li>
           <li>
             <a
-              href="/Okoro_Emmanuel_CV_Enhanced.pdf"
+              href="/Okoro_Emmanuel_CV_Updated.pdf"
               download
               className="inline-flex items-center gap-2 px-4 py-2 border border-signal text-signal font-mono text-sm rounded hover:bg-signal hover:text-void transition-all duration-200 mt-2"
             >
