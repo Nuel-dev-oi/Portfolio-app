@@ -9,7 +9,8 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "switchLight": "Switch to light mode",
-    "switchDark": "Switch to dark mode"
+    "switchDark": "Switch to dark mode",
+    "languageSelector": "Language selector"
   },
   "hero": {
     "eyebrow": "Full-Stack & Frontend Engineer",
@@ -145,7 +146,14 @@
     "errorBody": "Please try again or email me directly.",
     "emailDirect": "Or reach me directly at",
     "location": "Lagos, Nigeria",
-    "availability": "Open to full-time & freelance roles"
+    "availability": "Open to full-time & freelance roles",
+    "linksLabel": "// links",
+    "validation": {
+      "nameMin": "At least 2 characters",
+      "emailInvalid": "Valid email required",
+      "subjectMin": "At least 3 characters",
+      "messageMin": "At least 10 characters"
+    }
   },
   "globe": {
     "locating": "// locating developer…",

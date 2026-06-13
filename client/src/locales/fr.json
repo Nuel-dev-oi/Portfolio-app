@@ -9,7 +9,8 @@
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu",
     "switchLight": "Passer en mode clair",
-    "switchDark": "Passer en mode sombre"
+    "switchDark": "Passer en mode sombre",
+    "languageSelector": "Sélecteur de langue"
   },
   "hero": {
     "eyebrow": "Ingénieur Full-Stack & Frontend",
@@ -145,7 +146,14 @@
     "errorBody": "Veuillez réessayer ou m'écrire directement.",
     "emailDirect": "Ou contactez-moi directement à",
     "location": "Lagos, Nigéria",
-    "availability": "Disponible pour des postes à temps plein et freelance"
+    "availability": "Disponible pour des postes à temps plein et freelance",
+    "linksLabel": "// liens",
+    "validation": {
+      "nameMin": "Au moins 2 caractères",
+      "emailInvalid": "Email valide requis",
+      "subjectMin": "Au moins 3 caractères",
+      "messageMin": "Au moins 10 caractères"
+    }
   },
   "globe": {
     "locating": "// localisation du développeur…",

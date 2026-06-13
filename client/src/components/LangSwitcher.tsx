@@ -6,10 +6,10 @@ const LANGS: { code: Locale; label: string; flag: string }[] = [
 ];
 
 export function LangSwitcher() {
-  const { locale, setLocale } = useT();
+  const { locale, setLocale, t } = useT();
 
   return (
-    <div className="flex items-center gap-0.5" role="group" aria-label="Language selector">
+    <div className="flex items-center gap-0.5" role="group" aria-label={t('nav.languageSelector')}>
       {LANGS.map(({ code, label, flag }) => {
         const isActive = code === locale;
         return (

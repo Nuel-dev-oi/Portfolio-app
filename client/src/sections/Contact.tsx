@@ -92,10 +92,10 @@ export function Contact() {
   // ── Client-side validation ───────────────────────────────────────────────
   function validate(): boolean {
     const e: Partial<ContactFormData> = {};
-    if (form.name.trim().length < 2)    e.name    = 'At least 2 characters';
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = 'Valid email required';
-    if (form.subject.trim().length < 3) e.subject = 'At least 3 characters';
-    if (form.message.trim().length < 10) e.message = 'At least 10 characters';
+    if (form.name.trim().length < 2)    e.name    = t('contact.validation.nameMin');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = t('contact.validation.emailInvalid');
+    if (form.subject.trim().length < 3) e.subject = t('contact.validation.subjectMin');
+    if (form.message.trim().length < 10) e.message = t('contact.validation.messageMin');
     setErrors(e);
     return Object.keys(e).length === 0;
   }
@@ -192,7 +192,7 @@ export function Contact() {
 
             {/* Social links */}
             <div className="rounded-xl border border-steel/50 bg-ink p-6 flex flex-col gap-4">
-              <p className="font-mono text-xs text-muted tracking-widest uppercase">// links</p>
+              <p className="font-mono text-xs text-muted tracking-widest uppercase">{t('contact.linksLabel')}</p>
               <a
                 href="https://github.com/Nuel-dev-oi"
                 target="_blank"
