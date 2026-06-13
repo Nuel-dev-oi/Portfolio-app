@@ -140,6 +140,7 @@
     "sending": "Sending…",
     "successTitle": "Message sent!",
     "successBody": "Thanks for reaching out. I'll get back to you within 24 hours.",
+    "sendAnother": "Send another",
     "errorTitle": "Something went wrong.",
     "errorBody": "Please try again or email me directly.",
     "emailDirect": "Or reach me directly at",

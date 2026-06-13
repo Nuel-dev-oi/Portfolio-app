@@ -140,6 +140,7 @@
     "sending": "Envoi en cours…",
     "successTitle": "Message envoyé !",
     "successBody": "Merci de m'avoir contacté. Je vous répondrai dans les 24 heures.",
+    "sendAnother": "Envoyer un autre message",
     "errorTitle": "Une erreur s'est produite.",
     "errorBody": "Veuillez réessayer ou m'écrire directement.",
     "emailDirect": "Ou contactez-moi directement à",

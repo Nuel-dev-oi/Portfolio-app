@@ -339,7 +339,7 @@ function SuccessCard({ t, onReset }: { t: (k: string) => string; onReset: () => 
     <div
       ref={ref}
       className="flex flex-col items-center justify-center gap-5 rounded-xl border border-phosphor/30
-                 bg-ink p-12 text-center min-h-[320px]"
+                 bg-ink p-12 text-center min-h-80"
     >
       {/* Animated checkmark */}
       <div className="w-14 h-14 rounded-full border-2 border-phosphor flex items-center justify-center">
@@ -357,7 +357,7 @@ function SuccessCard({ t, onReset }: { t: (k: string) => string; onReset: () => 
         onClick={onReset}
         className="font-mono text-xs text-signal hover:text-phosphor transition-colors duration-150 underline underline-offset-4"
       >
-        Send another
+        {t('contact.sendAnother')}
       </button>
     </div>
   );
